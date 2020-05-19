@@ -8,8 +8,8 @@ setup(
   description = 'All Datastructures and Algorithms',   # Give a short description about your library
   author = 'Shanmuk',                   # Type in your name
   author_email = 'reddragonofdreams@gmail.com',      # Type in your E-Mail
-  url = 'https://github.com/shanmuk184/datastructures.git',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/shanmuk184/datastructures/archive/0.5.tar.gz',    # I explain this later on
+  url = 'https://github.com/shanmuk184/python_pure_datastructures.git',   # Provide either the link to your github or to your website
+  download_url = 'https://github.com/shanmuk184/python_pure_datastructures/archive/0.5.tar.gz',    # I explain this later on
   keywords = ['Node', 'LinkedList'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
       ],
