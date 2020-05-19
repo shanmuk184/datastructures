@@ -1,2 +1,2 @@
-from .base import *
-from .linked_list import *
+from python_pure_datastructures.base import *
+from python_pure_datastructures.linked_list import *
