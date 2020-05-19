@@ -1,4 +1,4 @@
-from base import BaseLinkedListNode
+from datastructures.base import BaseLinkedListNode
 
 class SinglyLinkedListNode(BaseLinkedListNode):
     pass
