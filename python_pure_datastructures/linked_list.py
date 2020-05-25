@@ -1,4 +1,4 @@
-from python_pure_datastructures.base import BaseLinkedListNode
+from .base import BaseLinkedListNode
 
 class SinglyLinkedListNode(BaseLinkedListNode):
     pass
@@ -72,6 +72,11 @@ class SingleLinkedList:
         node.set_next(node.get_next().get_next())
         return True
 
+    def set_nth_node(self, node_to_iterate, node_to_insert):
+        while (node_to_iterate.get_next()):
+            node_to_iterate = node_to_iterate.get_next()
+        node_to_iterate.set_next(node_to_insert)
+
     def delete_at(self, pos):
         if pos >= self.length or pos < 0:
             return 'Index out of range'
@@ -86,17 +91,10 @@ class SingleLinkedList:
                 node = node.get_next()
             node.set_next(node.get_next().get_next())
         return 1
-
-
-# Driver Program
+# from python_pure_datastructures.linked_list import SingleLinkedList
 linkedlist = SingleLinkedList()
-linkedlist.insert(1)
-linkedlist.insert(2)
+linkedlist.insert_at_end(1)
+linkedlist.insert_at_end(2)
 linkedlist.insertAt(3,1)
 linkedlist.insertAt(3,4)
 linkedlist.print_list()
-# linkedlist.delete_from_end()
-linkedlist.delete_at(3)
-linkedlist.print_list()
-# linkedlist.delete_from_beginning()
-# linkedlist.print_list()
