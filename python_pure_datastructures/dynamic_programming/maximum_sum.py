@@ -46,18 +46,5 @@ def maxSubarray(arr):
 
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    t = int(input())
-
-    for t_itr in range(t):
-        n = int(input())
-
-        arr = list(map(int, input().rstrip().split()))
-
-        result = maxSubarray(arr)
-
-        fptr.write(' '.join(map(str, result)))
-        fptr.write('\n')
-
-    fptr.close()
+    res = maxSubarray([1,5,9,-7,6])
+    print(' '.join(map(str, res)))
